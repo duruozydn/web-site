@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 3%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  background: linear-gradient(180deg, #fcfbfb 0%, rgba(228, 195, 195, 0.8) 100%);
+  color: #0f0e0e;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.main-list {
+  display: flex;
+  gap: 150px;
+}
+
+.list-item__link {
+  position: relative;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item__link::after {
+  position: absolute;
+  transition: 0.2s;
+  content: "";
+  border-radius: 10px;
+  width: 55%;
+  height: 3px;
+  bottom: -12px;
+  background: #a178b9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.list-item__link:hover::after {
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-size: cover;
+  padding: 10vh 10vw 80vh 10vw;
+  background-position: center bottom;
+  gap: 20px;
+  
+}
+
+.home__title {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.3em;
+  font-size: 100px;
+  text-align: left;
+  color: #090909;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.home__subtitle {
+  line-height: 3;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1;
+}
+
+.about {
+  font-weight: bolder;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 200px;
+  position: relative;
+  
+}
+
+.about__title {
+  
+  line-height: 10;
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: #080808;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 60px;
+}
+
+.about__title::after {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 3;
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 70%;
+  height: 1px;
+  bottom: -12px;
+  background: #090909;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block__text {
+  width: 40%;
+}
+
+.info-block__img {
+  align-self: center;
+}
+
+
+
+.feedback {
+  margin-bottom: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.feedback__title {
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: #0a0a0a;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.feedback__title::after {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 60%;
+  height: 1px;
+  bottom: -13px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form label {
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  font: inherit;
+  background: #392657;
+  border: 2px solid #a178b9;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form__input::placeholder {
+  color: #fff;
+}
+
+.form__input:active,
+.form__input:focus,
+.form__input:focus-visible {
+  border: none;
+}
+
+
+.form__button {
+  font: inherit;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(111.97deg, #CC8BF2 35.63%, rgba(204, 139, 242, 0) 150.16%);
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
